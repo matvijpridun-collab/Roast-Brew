@@ -1,42 +1,222 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Зерно & Чашка | Кафе-магазин свіжообсмаженої кави в зернах</title>
-
-    <meta name="description" content=
-    "Купуйте свіжообсмажену каву в зернах у нашому кафе-магазині.
-    Відкрийте для себе багатий смак та аромат наших сортів кави."
+    <title>Зерно &amp; Чашка | Кафе-магазин свіжообсмаженої кави в зернах</title>
+    <meta
+      name="description"
+      content="Купуйте свіжообсмажену каву в зернах у нашому кафе-магазині. Відкрийте для себе багатий смак та аромат наших сортів кави."
+    >
+    <meta
+      name="keywords"
+      content="кава, свіжообсмажена кава, кава в зернах, купити каву, кафе-магазин, зерно &amp; чашка"
     >
 
-    <meta name="keywords" content="кава, свіжообсмажена кава,
-    кава в зернах, купити каву, кафе-магазин,зерно & чашка">
-
-    <meta property="og:title" content="Зерно & Чашка | Кафе-магазин свіжообсмаженої кави в зернах">
-
-    <meta property="og:description" content="Купуйте свіжообсмажену каву в зернах у нашому кафе-магазині.
-    Відкрийте для себе багатий смак та аромат наших сортів кави.">
-
-    <meta property="og:image" content="img\хедерфото.jpg">
-
+    <meta
+      property="og:title"
+      content="Зерно &amp; Чашка | Кафе-магазин свіжообсмаженої кави в зернах"
+    >
+    <meta
+      property="og:description"
+      content="Купуйте свіжообсмажену каву в зернах у нашому кафе-магазині. Відкрийте для себе багатий смак та аромат наших сортів кави."
+    >
+    <meta property="og:image" content="img/хедерфото.jpg">
     <meta property="og:url" content="https://zerno-chashka.com">
-
     <meta property="og:type" content="website">
 
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5XL1F2NGCL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5XL1F2NGCL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-5XL1F2NGCL');
+    </script>
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-  gtag('config', 'G-5XL1F2NGCL');
-</script>
+  <body>
+    <!-- ===== Початок шапки сайту ===== -->
+    <header id="header">
+      <div class="header-container">
+        <a href="index.html">
+          <span>Зерно &amp; Чашка</span>
+        </a>
 
-</head>
-<body>
-    
-</body>
+        <nav>
+          <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="#catalog">каталог зерна</a></li>
+            <li><a href="#roasting">про обсмаження</a></li>
+            <li><a href="#advantages">переваги</a></li>
+            <li><a href="#order">замовлення</a></li>
+          </ul>
+        </nav>
+
+        <a href="#order" class="btn-order">Замовити каву</a>
+      </div>
+    </header>
+
+    <!-- ===== Початок основного вмісту ===== -->
+    <main class="main">
+      <!-- ===== Секція головного банера ===== -->
+      <section class="hero" id="hero">
+        <div class="hero-container">
+          <div class="hero-text">
+            <h1>Свіжообсмажена кава в зернах з доставкою</h1>
+            <p>
+              <strong>Ексклюзивні сорти 100% арабіки з Колумбії, Ефіопії та Бразилії.</strong>
+              Обсмажуємо щотижня, щоб ви насолоджувалися ідеальним ароматом.
+            </p>
+          </div>
+          <img
+            src="img/зерна падають фото херо.jpg"
+            alt="Кавові зерна падають на купу меленої кави"
+            class="hero-image"
+            loading="eager"
+            width="450"
+            height="600"
+          >
+        </div>
+      </section>
+
+      <!-- ===== Секція каталогу кави ===== -->
+      <section class="catalog" id="catalog">
+        <h2>Наш асортимент кавових зерен</h2>
+
+        <div class="product-card">
+          <img
+            src="img/фото1 Ефіопія каталог.jpg"
+            alt="пачка кави Ефіопія"
+            loading="lazy"
+            width="300"
+            height="300"
+          >
+          <h3>Ефіопія Йиргачеф</h3>
+          <p>
+            <strong>Смакові ноти:</strong> стиглі ягоди,
+            бергамот, яскрава цитрусова кислинка.
+            Легке тіло та квітковий аромат.
+          </p>
+          <button type="button" class="btn">До кошика</button>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="img/2 фото колумбія супремо.jpg"
+            alt="пачка кави Колумбія Супремо"
+            loading="lazy"
+            width="300"
+            height="300"
+          >
+          <h3>Колумбія Супремо</h3>
+          <p>
+            <strong>Смакові ноти:</strong> шоколад, горіхи,
+            карамель, легка кислинка. Середнє тіло та насичений аромат.
+          </p>
+          <button type="button" class="btn">До кошика</button>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="img/3 фото кава бразилія серадо.jpg"
+            alt="пачка кави Бразилія Серрадо"
+            loading="lazy"
+            width="300"
+            height="300"
+          >
+          <h3>Бразилія Серрадо</h3>
+          <p>
+            <strong>Смакові ноти:</strong> смажений фундук, какао, легка нотка тростинного цукру.
+            Низька кислинка, густа пінка.
+          </p>
+          <button type="button" class="btn">До кошика</button>
+        </div>
+      </section>
+
+      <!-- ===== Секція про обсмаження ===== -->
+      <section class="roasting" id="roasting">
+        <div class="roasting-container">
+          <h2>Наше обсмаження — секрет ідеального смаку</h2>
+          <p>
+            Ми використовуємо сучасне технологічне обладнання та
+            обсмажуємо кавові зерна невеликими батчами.
+            Це дозволяє нам контролювати кожен етап:
+            від профілю температури до карамелізації цукрів у зерні.
+          </p>
+          <p>
+            Завдяки середньому обсмаженню, яке є універсальним,
+            ми повністю розкриваємо природний потенціал кожного сорту.
+            Ви відчуєте саме ті смакові ноти, які заклала природа:
+            від ніжних шоколадних відтінків до яскравих фруктових ароматів.
+          </p>
+          <img
+            src="img/ростер для кавових зерен.jpg"
+            alt="Процес обсмаження кавових зерен"
+            loading="lazy"
+            width="600"
+            height="400"
+          >
+        </div>
+      </section>
+
+      <!-- ===== Секція переваг ===== -->
+      <section class="advantages" id="advantages">
+        <div class="advantages-container">
+          <h2>Чому обирають нас</h2>
+          <ul>
+            <li>Свіжообсмажена кава в зернах</li>
+            <li>Високоякісні сорти 100% арабіки</li>
+            <li>Контроль обсмаження та свіжості</li>
+            <li>Зручна доставка по всій Україні</li>
+            <li>Індивідуальний підхід до кожного клієнта</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ===== Секція оформлення замовлення ===== -->
+      <section class="order" id="order">
+        <div class="order-container">
+          <h2>Оформити замовлення</h2>
+          <p>
+            Залиште свої контакти, і наш менеджер зв'яжеться з вами
+            для уточнення деталей доставки та способу помолу кави.
+          </p>
+          <form action="order.html" method="post">
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" required placeholder="Ваше ім'я">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Ваш email">
+
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Ваш телефон">
+
+            <label for="message">Повідомлення:</label>
+            <textarea id="message" name="message" placeholder="Ваше повідомлення"></textarea>
+
+            <button type="submit">Відправити</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== Початок підвалу сайту ===== -->
+    <footer class="footer">
+      <div class="footer-container">
+        <p>&copy; 2026 Зерно &amp; Чашка. Всі права захищені.</p>
+        <nav>
+          <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="#catalog">каталог зерна</a></li>
+            <li><a href="#roasting">про обсмаження</a></li>
+            <li><a href="#advantages">переваги</a></li>
+            <li><a href="#order">замовлення</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
 </html>

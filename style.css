@@ -1,0 +1,116 @@
+html, body {
+    margin: 0;
+    padding: 0;
+
+    font-family: sans-serif, Arial, Helvetica;
+
+    background-color: #fcf9f5;
+    color: #2b1a0a;
+
+    line-height: 1.6;
+    list-style: none;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+/* =========== HEADER ============== */
+header {
+    position: sticky;
+    top: 0;
+
+    background: linear-gradient(110deg, #2b160b 0%, #60371f 55%, #263b2b 100%);
+    padding: 22px 24px;
+    box-shadow: 0 4px 18px rgba(43, 26, 10, 0.25);
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.header-container a {
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.25s ease, background-color 0.25s ease, transform 0.25s ease;
+}
+.header-container a:hover {
+    color: #e9b878;
+    transform: translateY(-3px);
+}
+.header-container a:active {
+    transform: scale(0.97);
+}
+.header-container ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+}
+.header-container span {
+    color: #f8eee2;
+    font-size: 28px;
+}
+.header-container nav a {
+    color: #f8eee2;
+    font-size: 18px;
+}
+.btn-order {
+    padding: 12px 20px;
+    background: #e9b878;
+    color: #2b1a0a;
+    border-radius: 20px;
+    font-size: 17px;
+}
+.btn-order:hover {
+    background: #3a2114;
+}
+.btn-order:active {
+    background: #2b160b;
+    transform: scale(0.96);
+}
+/* ============= HEADER ============== */
+/* ============= HERO ============== */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    padding: 50px 24px;
+    background: linear-gradient(110deg, #3e2010 0%, #6b3d23 55%, #7a6f1dc8 100%);
+    color: #dddcdc;
+}
+.hero-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
+.hero-text {
+    flex: 1 1 400px;
+}
+.hero h1 {
+    margin-bottom: 20px;
+    font-size: 56px;
+    line-height: 1.15;
+}
+.hero p {
+    font-size: 20px;
+}
+.hero-image {
+    flex: 0 1 450px;
+    width: 450px;
+    height: auto;
+    object-fit: contain;
+}
